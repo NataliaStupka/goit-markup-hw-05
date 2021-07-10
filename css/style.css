@@ -129,6 +129,20 @@ body {
 .menu-link.current {
   color: var(--accent-color);
 }
+.current.studio::after {
+  display: block;
+  content: '';
+  width: 48px;
+  height: 4px;
+  background-color: var(--accent-color);
+}
+.current.portfolio::after {
+  display: block;
+  content: '';
+  width: 78px;
+  height: 4px;
+  background-color: var(--accent-color);
+}
 
 .menu-link:hover,
 .menu-link:focus {
@@ -346,9 +360,27 @@ body {
   justify-content: space-between;
 }
 
-/* .profile-item:not(:last-child) {
-  margin-right: 30px;
-} */
+.profile-item {
+  position: relative;
+}
+.profile-label {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: rgba(47, 48, 58, 0.8);
+  width: 370px;
+  height: 70px;
+  padding-top: 27px;
+}
 
 /* ========== END PROFILE (чем мы занимаемся) ========== */
 
@@ -669,5 +701,25 @@ body {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
+}
+
+/* .project-img {
+  position: relative;
+} */
+.project-overlay {
+  position: absolute;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #ffffff;
+  background-color: rgba(33, 150, 243, 0.9);
+  width: 370px;
+  /* height: 294px; */
+  padding-top: 63px;
+  padding-bottom: 63px;
 }
 /* ========== END PROJECT ========== */
