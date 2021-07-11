@@ -61,14 +61,9 @@ img {
   margin: -1px;
 }
 
-/* возможно, поменять цвет текста */
 body {
   font-family: 'Roboto', sans-serif;
   background-color: var(--white-color);
-
-  /* ???
-  margin-left: auto;
-  margin-right: auto; */
 }
 
 /* Logo */
@@ -124,6 +119,8 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-link.current {
@@ -191,6 +188,8 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primery-text-color);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-mail:hover,
@@ -221,6 +220,8 @@ body {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .main-button:hover,
@@ -240,6 +241,10 @@ body {
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-secondary:hover,
 .button-secondary:focus {
@@ -468,6 +473,9 @@ body {
   height: 44px;
   border-radius: 50%;
   background-color: #ffffff;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-list-link:hover,
 .social-list-link:focus {
@@ -515,6 +523,9 @@ body {
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-link:hover,
@@ -564,10 +575,14 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #ffffff;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-mail {
   margin-bottom: 9px;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-mail-link {
@@ -588,6 +603,8 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-address:hover,
 .footer-address:focus {
@@ -633,6 +650,9 @@ body {
   height: 44px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-footer-link:hover,
 .social-footer-link:focus {
@@ -674,11 +694,16 @@ body {
 }
 
 .project-item {
+  position: relative;
+
   margin-left: 30px;
   margin-top: 30px;
   flex-basis: calc((100% - 90px) / 3);
   background: #ffffff;
   border: 1px solid #eeeeee;
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .project-item:hover,
@@ -712,11 +737,10 @@ body {
   letter-spacing: 0.03em;
 }
 
-/* .project-img {
-  position: relative;
-} */
 .project-overlay {
   position: absolute;
+  top: 0;
+  left: 0;
 
   font-style: normal;
   font-weight: 400;
