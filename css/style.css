@@ -129,14 +129,23 @@ body {
 .menu-link.current {
   color: var(--accent-color);
 }
-.current.studio::after {
+.menu-item {
+  position: relative;
+}
+.current.studio-underline::after {
+  position: absolute;
+  bottom: -33px;
+
   display: block;
   content: '';
   width: 48px;
   height: 4px;
   background-color: var(--accent-color);
 }
-.current.portfolio::after {
+.current.portfolio-underline::after {
+  position: absolute;
+  bottom: -33px;
+
   display: block;
   content: '';
   width: 78px;
