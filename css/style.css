@@ -138,6 +138,7 @@ body {
   width: 48px;
   height: 4px;
   background-color: var(--accent-color);
+  border-radius: 2px;
 }
 .current.portfolio-underline::after {
   position: absolute;
@@ -148,6 +149,7 @@ body {
   width: 78px;
   height: 4px;
   background-color: var(--accent-color);
+  border-radius: 2px;
 }
 
 .menu-link:hover,
